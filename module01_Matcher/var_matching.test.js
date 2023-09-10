@@ -59,7 +59,7 @@ describe("testing truthy and falsy", () => {
 function compileError() {
   throw new Error("wrong JDK error");
 }
-test("testing above function", () => {
+test("testing above function - exceptions testing", () => {
   expect(() => compileError()).toThrowError(); //throw testing
   expect(() => compileError()).toThrowError("wrong JDK error"); //throw error message testing
   expect(() => compileError()).toThrow("wrong JDK error"); //testing message without specifying type of error
